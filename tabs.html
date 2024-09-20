@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    }
+
+    .main-section {
+        width: 500px;
+        border-radius: 10px;
+        margin: 100px auto;
+        padding: 10px 30px 60px;
+        box-shadow: 0 8px 14px rgba(0, 0, 0, 0.2);
+    }
+
+    input,
+    section {
+        clear: both;
+        display: none;
+        padding-top: 10px;
+    }
+
+    label {
+        cursor: pointer;
+        font-size: 14px;
+        display: block;
+        float: left;
+        padding: 10px 30px;
+        border-top: 2px solid transparent;
+        border-right: 1px solid transparent;
+        border-left: 1px solid transparent;
+        border-bottom: 1px solid #DDD;
+    }
+
+    #home-tab:checked~#home-content,
+    #html-tab:checked~#html-content,
+    #css-tab:checked~#css-content,
+    #javascript-tab:checked~#javascript-content {
+        display: block;
+    }
+
+    input:checked+label {
+        font-weight: bold;
+        border-top-color: #FFB03D;
+        border-right-color: #d5caca;
+        border-left-color: #d5caca;
+        border-bottom-color: transparent;
+    }
+
+    h2 {
+        margin-bottom: 1rem;
+    }
+
+    h3 {
+        color: #e65b00;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    </style>
+</head>
+<body>
+
+    <div class="main-section">
+        <h2>Student</h2>
+        <input id="home-tab" type="radio" name="tabs" checked>
+        <label for="home-tab">Home</label>
+        <input id="html-tab" type="radio" name="tabs">
+        <label for="html-tab"> Study </label>
+        <input id="css-tab" type="radio" name="tabs">
+        <label for="css-tab"> Hobbies </label>
+        <input id="javascript-tab" type="radio" name="tabs">
+        <label for="javascript-tab"> Thank you </label>
+
+        <section id="home-content">
+            <p>Hai viewers,</p>&nbsp;
+            <p>I am Teja Sree</p>
+        </section>
+        <section id="html-content">
+            <h3> Education </h3>
+            <p>Currently, I am pursing B Tech in the stream of AI&ML </p>
+        </section>
+        <section id="css-content">
+            <h3> Hobbies </h3>
+            <p> In my free time, mostly I will spend my time with the photography and video editing </p>
+        </section>
+        <section id="javascript-content">
+            <h3> Thank You </h3>
+            
+        </section>
+    </div>
+    
+</body>
+</html>
